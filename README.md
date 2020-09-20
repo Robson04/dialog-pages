@@ -1,2 +1,2 @@
-# dialog-pages
-Dialog Pages for SA-MP scripts.
+# Advanced Dialog Pages.
+Dialog Pages for SA-MP scripts created by Robson04.
