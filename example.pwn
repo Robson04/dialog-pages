@@ -1,7 +1,7 @@
 public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[])
 {
     new string[128];
-    format(string, sizeof string, "[Dialog-Pages Debug] You decited to response = %s. Listitem index = %i.", (response) ? ("true") : ("false"), listitem);
+    format(string, sizeof string, "[Dialog-Pages Debug] You decided to response = %s. Listitem index = %i.", (response) ? ("true") : ("false"), listitem);
     SendClientMessage(playerid, 0xFFF0000, string);
     return 1;
 }
