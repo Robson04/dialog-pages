@@ -37,3 +37,5 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_in
   - **listitem** - return the index of the row clicked depending on the page.
   - **btn_next_index** - return the index of the next button that changes page.
   - **btn_previous_index** - return the index of the previous button that changes page.
+
+The last two arguments of this public are only useful when you indicate that the selecyed dialog is dynamic. With two arguments, you are able to check if one of the page change buttons has been clicked.
