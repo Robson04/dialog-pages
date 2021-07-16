@@ -64,4 +64,5 @@ ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.",
 ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel");
 ```
 See how easy it is to use this library!
+
 **Just remember that if you want to change the previous content button, you have to enter the previous full arguments.**
