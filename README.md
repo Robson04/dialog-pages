@@ -166,9 +166,14 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
 
 ## Display of the current page or the maximum number of pages.
 > By placing the appropriate phrases, which are given below in the title or in the main text, you are able to display the current page viewed or the number of all generated pages by Dialog-Pages.
-```pawn
+```
 #currentpage - display a current page.
 #pagelist - display a all list of pages.
+```
+
+Example:
+```pawn
+ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Test dialog. (Page: #currentpage/#pagelist)", string, "Select", "Cancel");
 ```
 
 ## Feedback and contact with library autors:
