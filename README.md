@@ -163,3 +163,6 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
 ```
 
 > Creating dynamic dialogs is very important for people who want to change actions for buttons that change page. Coding them is very simple and simple to operate. This way you can edit the action of the buttons.
+
+## Feedback and contact with autor
+- Author of this include is Robson04. If you would contact with me, you can find me in discord: **Robson04#8010**
