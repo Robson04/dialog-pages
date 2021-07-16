@@ -176,9 +176,7 @@ Example:
 ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Test dialog. (Page: #currentpage/#pagelist)", string, "Select", "Cancel");
 ```
 
-<center>
-![alt text](https://i.imgur.com/Bv6tTvi.png)
-</center>
+<div style="text-align:center"><img src="https://i.imgur.com/Bv6tTvi.png" /></div>
 
 ## Feedback and contact with library autors:
 - Author of this include is Robson04. If you would contact with me, you can find me in discord: **Robson04#8010**
