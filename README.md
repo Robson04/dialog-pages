@@ -1,4 +1,3 @@
-# Advanced Dialog Pages.
-Dialog Pages for SA-MP scripts created by Robson04.
+# Dynamic Dialog-Pages 🥇
 
-If you have question or you have seen bug on this include text me using discord Robson04#8010.
+> First of all, using this library you will can create pages in dialogs with a few lines of code.
