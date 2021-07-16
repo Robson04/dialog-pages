@@ -1,5 +1,5 @@
 /*
-    Dialog Pages V2.0
+    Dialog Pages V2.1
     Author: Robson04
 */
 
