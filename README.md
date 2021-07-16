@@ -12,8 +12,6 @@ To create dialog-pages you must use this function. This function have more argum
 ```pawn
 ShowPlayerDialogPages(playerid, dialogid, dialogstyle, caption[], info[], button1[], button2[], maxitemslist = 15, nextbutton[] = "Next page", lastbutton[] = "Previous page", bool:dynamic = false);
 ```
-Dialog-Pages cooperates with large strings which means you can enter whatever you want. Now you can fit a lot of content into one dialog.
-1. function ShowPlayerDialogPages ~ parametrs/arguments
   - **playerid** - player ID.
   - **dialogid** - dialog ID to check action.
   - **dialogstyle** - dialog format: *DIALOG_STYLE_LIST, DIALOG_STYLE_TABLIST, DIALOG_STYLE_TABLIST_HEADERS*
@@ -25,8 +23,12 @@ Dialog-Pages cooperates with large strings which means you can enter whatever yo
   - **nextbutton[]** - string content for next page button.
   - **lastbutton[]** - string content for previous page button.
   - **bool:dynamic** - if you would control dialog manualy (mainly buttons for page changes) you can set this boolean to true. If you use dynamic dialog-pages you must assign the action by yourself to the buttons chaning pages. If set to false, the include assign the page change button itself without your interference. You can learn more about dynamic dialogs below.
+Dialog-Pages cooperates with large strings which means you can enter whatever you want. Now you can fit a lot of content into one dialog.
 
-2. public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_index, btn_previous_index)
+To check the action for dialog-pages use the initialized function in the library:
+```pawn
+public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_index, btn_previous_index)
+```
   - **playerid** - player ID.
   - **dialogid** - dialog ID for check specific dialog.
   - **response** - returns true/false depending on which button is clicked in the dialog box.
