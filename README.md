@@ -164,7 +164,7 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
 
 > Creating dynamic dialogs is very important for people who want to change actions for buttons that change page. Coding them is very simple and simple to operate. This way you can edit the action of the buttons.
 
-## Display of the current page or the maximum number of pages.
+## Display of the current page or the maximum number of pages in caption or info.
 > By placing the appropriate phrases, which are given below in the title or in the main text, you are able to display the current page viewed or the number of all generated pages by Dialog-Pages.
 ```
 #currentpage - display a current page.
