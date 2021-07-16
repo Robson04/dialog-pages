@@ -130,3 +130,35 @@ This code above checks to see if one of the page change buttons is clicked and g
 > An important element is the reset of dialog data. If you are using dynamic dialogs you are forced to reset the data after the dialog is completely closed.
 
 > Look at 115 line, if player wasn't clicked button for changing pages he must clicked a normal list so you will be forced to reset dialog data for player because if player click on the normal list, the dialog is completely closed.
+
+If we wanted to do exactly the same as in the static dialog above, we should code it this way in OnDialogPagesResponse.
+```pawn
+public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[], btn_next_index, btn_previous_index)
+{
+    switch(dialogid)
+    {
+        case 9812:
+        {
+            if(listitem == btn_next_index || listitem == btn_previous_index)
+            {
+                if(listitem == btn_next_index) 
+                    ShowPlayerDialogNextPage(playerid); 
+                else ShowPlayerDialogPreviousPage(playerid); 
+            }
+            else 
+            {
+                if(response)
+                {
+                    new string[128];
+                    format(string, sizeof string, "You selected row: %i", listitem);
+                    SendClientMessage(playerid, -1, string);
+                }
+                ClearDialogPagesData(playerid); //remember to reset player data if dialog completely closed.
+            }
+        }
+    }
+    return 1;
+}
+```
+
+> Creating dynamic dialogs is very important for people who want to change actions for buttons that change page. Coding them is very simple and simple to operate. This way you can edit the action of the buttons.
