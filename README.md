@@ -38,4 +38,16 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_in
   - **btn_next_index** - return the index of the next button that changes page.
   - **btn_previous_index** - return the index of the previous button that changes page.
 
-The last two arguments of this public are only useful when you indicate that the selecyed dialog is dynamic. With two arguments, you are able to check if one of the page change buttons has been clicked.
+**The last two arguments of this public are only useful when you indicate that the selecyed dialog is dynamic. With two arguments, you are able to check if one of the page change buttons has been clicked.**
+
+###Let's see how to create a dialog which isn't dynamic.
+> Let's create a loop which will generate for example 100 lines and put it into dialog. Let's make dialog which designate that there're only 10 lines per page. We can estimate that if we have 100 lines and divide it into 10 possible lines in one page in dialog there will be 10 pages - because **10 * 10 = 100**
+```pawn
+new string[4096], tmp_str[64];
+for(new i = 0; i < 100; i++)
+{
+    format(tmp_str, sizeof tmp_str, "Random number: %i\n", random(999));
+    strcat(string, tmp_str);
+}
+ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages ~ Robson04.", string, "Select", "Cancel", 15, "Next page", "Previous Page", false);
+```
