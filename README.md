@@ -119,5 +119,12 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
 }
 ```
 
+> Functions for manage a dynamic dialogs below:
+```pawn
+ShowPlayerDialogNextPage(playerid); - open a next page if the next page exist.
+ShowPlayerDialogPreviousPage(playerid); - open a previous page if previous page exist.
+ShowPlayerDialogCurrentPage(playerid); - open a current page.
+```
+
 This code above checks to see if one of the page change buttons is clicked and gives them the same action that the include gives by default.
 > An important element is the reset of dialog data. If you are using dynamic dialogs you are forced to reset the data after the dialog is completely closed.
