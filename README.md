@@ -16,7 +16,7 @@ Dialog-Pages cooperates with large strings which means you can enter whatever yo
 1. ShowPlayerDialogPages ~ parametrs/arguments
   - **playerid** - player ID.
   - **dialogid** - dialog ID to check action.
-  - **dialogstyle** - dialog format:
+  - **dialogstyle** - dialog format: DIALOG_STYLE_LIST, DIALOG_STYLE_TABLIST, DIALOG_STYLE_TABLIST_HEADERS
   - **caption[]** - title string dialog.
   - **info[]** - main string content dialog.
   - **button1[]** - string content for first button.
