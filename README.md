@@ -14,14 +14,14 @@ ShowPlayerDialogPages(playerid, dialogid, dialogstyle, caption[], info[], button
 ```
 Dialog-Pages cooperates with large strings which means you can enter whatever you want. Now you can fit a lot of content into one dialog.
 1. ShowPlayerDialogPages ~ parametrs/arguments
-  - playerid - player ID.
-  - dialogid - dialog ID to check action.
-  - dialogstyle - dialog format:
-  - caption[] - title string dialog.
-  - info[] - main string content dialog.
-  - button1[] - string content for first button.
-  - button2[] - string content for last button.
-  - maxitemlist - number of lines for one page.
-  - nextbutton[] - string content for next page button.
-  - lastbutton[] - string content for previous page button.
-  - bool:dynamic - if you would control dialog manualy (mainly buttons for page changes) you can set this boolean to true. If you use dynamic dialog-pages you must assign the action by yourself to the buttons chaning pages. If set to false, the include assign the page change button itself without your interference. You can learn more about dynamic dialogs below.
+  - *playerid* - player ID.
+  - *dialogid* - dialog ID to check action.
+  - *dialogstyle* - dialog format:
+  - *caption[]* - title string dialog.
+  - *info[]* - main string content dialog.
+  - *button1[]* - string content for first button.
+  - *button2[]* - string content for last button.
+  - *maxitemlist* - number of lines for one page.
+  - *nextbutton[]* - string content for next page button.
+  - *lastbutton[]* - string content for previous page button.
+  - *bool:dynamic* - if you would control dialog manualy (mainly buttons for page changes) you can set this boolean to true. If you use dynamic dialog-pages you must assign the action by yourself to the buttons chaning pages. If set to false, the include assign the page change button itself without your interference. You can learn more about dynamic dialogs below.
