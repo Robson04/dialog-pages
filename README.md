@@ -128,7 +128,7 @@ ClearDialogPagesData(playerid); //- clearing a all data dialog-pages for player.
 ```
 
 This code above checks to see if one of the page change buttons is clicked and gives them the same action that the include gives by default.
-> An important element is the reset of dialog data. If you are using dynamic dialogs you are forced to reset the data after the dialog is completely closed.
+> An important element is the reset of dialog data. If you are using dynamic dialogs you are forced to reset the data after the dialog is completely closed. You must always keep this in mind as data cleansing is only required in dynamic dialogs.
 
 > Look at 115 line, if player wasn't clicked button for changing pages he must clicked a normal list so you will be forced to reset dialog data for player because if player click on the normal list, the dialog is completely closed.
 
