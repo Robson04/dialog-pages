@@ -88,3 +88,13 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_in
 Ready. In this way, we have created a dialg with the pages that sends a message to the client who exactly clicked the index with the "Select" button.
 
 ## 📑 Let's see how to create a dialog which is dynamic. 📑
+> We will create the same dialog as above, only that it will be dynamic. We set ``bool:dynamic`` to **true** (in this case we have to give all the arguments in the function).
+```pawn
+new string[4096], tmp_str[64];
+for(new i = 0; i < 100; i++)
+{
+    format(tmp_str, sizeof tmp_str, "Random number: %i\n", random(999));
+    strcat(string, tmp_str);
+}
+ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 15, "Next page", "Previous Page", true);
+```
