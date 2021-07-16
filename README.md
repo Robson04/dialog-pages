@@ -22,11 +22,12 @@ ShowPlayerDialogPages(playerid, dialogid, dialogstyle, caption[], info[], button
   - **maxitemlist** - number of lines for one page.
   - **nextbutton[]** - string content for next page button.
   - **lastbutton[]** - string content for previous page button.
-  - **bool:dynamic** - if you would control dialog manualy (mainly buttons for page changes) you can set this boolean to true. If you use dynamic dialog-pages you must assign the action by yourself to the buttons chaning pages. If set to false, the include assign the page change button itself without your interference. You can learn more about dynamic dialogs below.-
+  - **bool:dynamic** - if you would control dialog manualy (mainly buttons for page changes) you can set this boolean to true. If you use dynamic dialog-pages you must assign the action by yourself to the buttons chaning pages. If set to false, the include assign the page change button itself without your interference. You can learn more about dynamic dialogs below.
 
 Dialog-Pages cooperates with large strings which means you can enter whatever you want. Now you can fit a lot of content into one dialog.
 
 To check the action for dialog-pages use the initialized function in the library:
+
 ```pawn
 public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_index, btn_previous_index)
 ```
