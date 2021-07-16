@@ -100,7 +100,7 @@ for(new i = 0; i < 100; i++)
     format(tmp_str, sizeof tmp_str, "Random number: %i\n", random(999));
     strcat(string, tmp_str);
 }
-ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 15, "Next page", "Previous Page", true);
+ShowPlayerDialogPages(playerid, 9700, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 15, "Next page", "Previous Page", true);
 ```
 When you using dynamic dialogs, you are forced to add an action for page buttons on the your code. To give them an action, you need to use the OnDialogPagesResponse callback and check which button has been clicked. For this condition, you will need the last two callback parameters. Just see 109 line:
 ```pawn
@@ -108,7 +108,7 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
 {
     switch(dialogid)
     {
-        case 9812:
+        case 9700:
         {
             if(listitem == btn_next_index || listitem == btn_previous_index) //line 109
             {
@@ -147,7 +147,7 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
 {
     switch(dialogid)
     {
-        case 9812:
+        case 9700:
         {
             if(listitem == btn_next_index || listitem == btn_previous_index)
             {
