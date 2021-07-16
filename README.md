@@ -106,13 +106,13 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
     {
         case 9812:
         {
-            if(listitem == btn_next_index || listitem == btn_previous_index)
+            if(listitem == btn_next_index || listitem == btn_previous_index) //line 109
             {
                 if(listitem == btn_next_index) 
                     ShowPlayerDialogNextPage(playerid); 
                 else ShowPlayerDialogPreviousPage(playerid); 
             }
-            else ClearDialogPagesData(playerid);
+            else ClearDialogPagesData(playerid); //line 115
         }
     }
     return 1;
