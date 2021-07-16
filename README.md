@@ -67,7 +67,7 @@ See how easy it is to use this library!
 
 **Just remember that if you want to change the previous content button, you have to enter the previous full arguments.**
 
-## Let's check how to refer to the dialog. Let us make that after clicking the "Select" button then server send message for player with the index  that was selected on the page in the dialog when will be displayed.
+#### Let's check how to refer to the dialog. Let us make that after clicking the "Select" button then server send message for player with the index  that was selected on the page in the dialog when will be displayed.
 ```pawn
 public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_index, btn_previous_index)
 {
