@@ -40,7 +40,7 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_in
 
 **The last two arguments of this public are only useful when you indicate that the selecyed dialog is dynamic. With two arguments, you are able to check if one of the page change buttons has been clicked.**
 
-###Let's see how to create a dialog which isn't dynamic.
+## Let's see how to create a dialog which isn't dynamic.
 > Let's create a loop which will generate for example 100 lines and put it into dialog. Let's make dialog which designate that there're only 10 lines per page. We can estimate that if we have 100 lines and divide it into 10 possible lines in one page in dialog there will be 10 pages - because **10 * 10 = 100**
 ```pawn
 new string[4096], tmp_str[64];
