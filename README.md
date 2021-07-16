@@ -86,3 +86,5 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_in
     return 1;
 }
 ```
+
+Ready. In this way, we have created a dialg with the pages that sends a message to the client who exactly clicked the index with the "Select" button.
