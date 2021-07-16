@@ -98,3 +98,4 @@ for(new i = 0; i < 100; i++)
 }
 ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 15, "Next page", "Previous Page", true);
 ```
+When using dynamic dialogs, we are forced to add an action for page buttons on the side of your code. To give them an action, you need to use the OnDialogPagesResponse callback.
