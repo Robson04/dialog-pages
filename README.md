@@ -10,6 +10,7 @@ Using this library you will can create pages in dialogs with a few lines of code
 ```pawn
 #include "dialog-pages.inc"
 ```
+> The addition of the YSI library is required for Dialog-Pages to function properly. YSI has been added to the repository and the necessary files (compilator etc.)
 
 To create dialog-pages you must use this function. This function have more arguments than the orginal. Additional arguments add library hints how the dialog exactly should look.
 ```pawn
