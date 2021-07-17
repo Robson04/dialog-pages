@@ -89,7 +89,7 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_in
 }
 ```
 
-Ready. In this way, we have created a dialg with the pages that sends a message to the client who exactly clicked the index with the "Select" button.
+Ready. In this way, we have created a dialog with the pages that sends a message to the client who exactly clicked the index with the "Select" button.
 
 ## 📑 Let's see how to create a dialog which is dynamic. 📑
 > We will create the same dialog as above, only that it will be dynamic. We set ``bool:dynamic`` to **true** (in this case we have to give all the arguments in the function).
