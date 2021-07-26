@@ -39,6 +39,7 @@ public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[]
   - **dialogid** - dialog ID for check specific dialog.
   - **response** - returns true/false depending on which button is clicked in the dialog box.
   - **listitem** - return the index of the row clicked depending on the page.
+  - **inputtext** - return a content of switched listitem.
   - **btn_next_index** - return the index of the next button that changes page.
   - **btn_previous_index** - return the index of the previous button that changes page.
 
