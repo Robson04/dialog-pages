@@ -104,7 +104,7 @@ ShowPlayerDialogPages(playerid, 9700, DIALOG_STYLE_LIST, "Dialog-Pages - Test.",
 ```
 When you using dynamic dialogs, you are forced to add an action for page buttons on the your code. To give them an action, you need to use the OnDialogPagesResponse callback and check which button has been clicked. For this condition, you will need the last two callback parameters. Just see 109 line:
 ```pawn
-public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[], btn_next_index, btn_previous_index)
+public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_index, btn_previous_index)
 {
     switch(dialogid)
     {
@@ -143,7 +143,7 @@ ClearDialogPagesData(playerid); //- clearing a all data dialog-pages for player.
 
 If we wanted to do exactly the same as in the static dialog above, we should code it this way in OnDialogPagesResponse.
 ```pawn
-public OnDialogPagesResponse(playerid, dialogid, response, listitem, inputtext[], btn_next_index, btn_previous_index)
+public OnDialogPagesResponse(playerid, dialogid, response, listitem, btn_next_index, btn_previous_index)
 {
     switch(dialogid)
     {
