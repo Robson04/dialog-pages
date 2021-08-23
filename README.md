@@ -130,7 +130,7 @@ This code above checks to see if one of the page change buttons is clicked and g
 ShowPlayerDialogNextPage(playerid); //- open a next page if the next page exist.
 ShowPlayerDialogPreviousPage(playerid); //- open a previous page if previous page exist.
 ShowPlayerDialogCurrentPage(playerid); //- open a current page.
-ClearDialogPagesData(playerid); //- clearing a all data dialog-pages for player.
+ClearDialogPagesData(playerid); //- clearing all data dialog-pages for player.
 ```
 
 > Definitions:
