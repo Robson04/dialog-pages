@@ -2,7 +2,7 @@
 
 Using this library you will can create pages in dialogs with a few lines of code. You can display many more lines in the dialog aside from the 4096 character limit using pages.
 
-<img src="https://i.imgur.com/hhHQpOP.gif" />
+<img src="https://i.imgur.com/Debag70.gif" />
 
 > Let's see how it's working.
 
