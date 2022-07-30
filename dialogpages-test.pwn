@@ -52,7 +52,7 @@ new const TestDialog[][][] =
     }
 };
 
-CMD:dialogtest(playerid)
+CMD:dialogtest1(playerid)
 {
     new string[4096] = "#\tIdentity\tCareer\n";
     for(new i; i < 26; i++)
@@ -67,6 +67,42 @@ CMD:dialogtest(playerid)
         strcat(string, tmp_str);
     }
     ShowPlayerDialogPages(playerid, 947, DIALOG_STYLE_TABLIST_HEADERS, "List of professionally active people", string, "Hidden", "", 20, "> Next page", "< Previous Page");
+    return 1;
+}
+
+CMD:dialogtest2(playerid)
+{
+    new string[4096] = "#\tIdentity\tCareer\n";
+    for(new i; i < 26; i++)
+    {
+        new tmp_str[128], career[32];
+        for(new j, k = sizeof(Careers); j < k; j++)
+        {
+            if(TestDialog[0][i][1] == Careers[j][0])
+                format(career, sizeof career, Careers[j][1]);
+        }
+        format(tmp_str, sizeof tmp_str, "%i\t{4361EA}%s\t%s\n", TestDialog[0][i][0], TestDialog[0][i][2], career);
+        strcat(string, tmp_str);
+    }
+    ShowPlayerDialogPages(playerid, 947, DIALOG_STYLE_TABLIST_HEADERS, "List of professionally active people", string, "Hidden", "", 20, "{FFC300}>>> (#currentpage/#pagelist) >>>", "{FFC300}<<< (#currentpage/#pagelist) <<<");
+    return 1;
+}
+
+CMD:dialogtest3(playerid)
+{
+    new string[4096] = "# (Page: #currentpage/#pagelist)\tIdentity\tCareer\n";
+    for(new i; i < 26; i++)
+    {
+        new tmp_str[128], career[32];
+        for(new j, k = sizeof(Careers); j < k; j++)
+        {
+            if(TestDialog[0][i][1] == Careers[j][0])
+                format(career, sizeof career, Careers[j][1]);
+        }
+        format(tmp_str, sizeof tmp_str, "%i\t{4361EA}%s\t%s\n", TestDialog[0][i][0], TestDialog[0][i][2], career);
+        strcat(string, tmp_str);
+    }
+    ShowPlayerDialogPages(playerid, 947, DIALOG_STYLE_TABLIST_HEADERS, "List of professionally active people", string, "Hidden", "", 20, "{C70039}• > •", "{C70039}• < •");
     return 1;
 }
 
