@@ -54,15 +54,15 @@ for(new i = 0; i < 100; i++)
     format(tmp_str, sizeof tmp_str, "Random number: %i\n", random(999));
     strcat(string, tmp_str);
 }
-ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 15, "Next page", "Previous Page", false);
+ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 10, "Next page", "Previous Page", false);
 ```
 > If your intention isn't to create a dynamic dialog, you don't need to set the last argument because the default value is false.
 ```pawn
-ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 15, "Next page", "Previous Page");
+ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 10, "Next page", "Previous Page");
 ```
 > The same goes for the buttons chaning pages. If you don't want to change them, you can just skip the arguments last three arguments:
 ```pawn
-ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 15);
+ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Dialog-Pages - Test.", string, "Select", "Cancel", 10);
 ```
 > Also, you don't need to enter the number of lines per page. The default is 15.
 ```pawn
