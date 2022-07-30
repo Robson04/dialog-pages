@@ -185,7 +185,7 @@ Example:
 ```pawn
 ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Test dialog. (Page: #currentpage/#pagelist)", string, "Select", "Cancel");
 ```
-<div style="text-align: center;">
+<div style="text-align: center; margin: 0 auto;">
   <img src="https://i.imgur.com/QX2AiUO.png" />
   <img src="https://i.imgur.com/IZFPkDI.png" />
 </div>
