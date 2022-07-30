@@ -185,7 +185,10 @@ Example:
 ```pawn
 ShowPlayerDialogPages(playerid, 9812, DIALOG_STYLE_LIST, "Test dialog. (Page: #currentpage/#pagelist)", string, "Select", "Cancel");
 ```
-<img src="https://i.imgur.com/QX2AiUO.png" />
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/QX2AiUO.png" />
+  <img src="https://i.imgur.com/IZFPkDI.png" />
+</div>
 
 ## #pragma - most possible error.
 > It is possible that you will have to use #pragma dynamic. This is the fault of exceeding the data buffering barrier. If the server does not start and the code compiles, increase cells to #pragma dynamic
