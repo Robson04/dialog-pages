@@ -1,10 +1,11 @@
 /*
     Dialog Pages V2.0
     Author: Robson04
+	(DignitySAMP for SAMPCTL conversion)
 */
 
-#include "a_samp"
-#include "YSI_Coding\y_hooks"
+#include <a_samp>
+#include <YSI_Coding\y_hooks>
 
 #define MAX_DIALOG_CAPTION_LEN (64)
 #define MAX_DIALOG_HEADER_LEN (512)
@@ -25,7 +26,11 @@ enum DIALOG_PAGES
 {
     bool:IsDialogActivate,
     DialogID,
-    DialogStyle,
+	#if defined _INC_open_mp
+    	t_DIALOG_STYLE:DialogStyle,
+	#else 
+		DialogStyle,
+	#endif
     Caption[MAX_DIALOG_CAPTION_LEN],
     Info[MAX_DIALOG_INFO_LEN],
     Button1[MAX_DIALOG_BUTTON_LEN],
@@ -125,7 +130,11 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     return 0;
 }
 
+#if defined _INC_open_mp
+stock ShowPlayerDialogPages(playerid, dialogid, t_DIALOG_STYLE:dialogstyle, const caption[], info[], const button1[], const button2[], maxitemslist = 15, const nextbutton[] = "Next page", const lastbutton[] = "Previous page", bool:dynamic = false)
+#else
 stock ShowPlayerDialogPages(playerid, dialogid, dialogstyle, const caption[], info[], const button1[], const button2[], maxitemslist = 15, const nextbutton[] = "Next page", const lastbutton[] = "Previous page", bool:dynamic = false)
+#endif
 {
     ClearDialogPagesData(playerid);
     PlayerDialogPagesCache[playerid][DialogID] = dialogid;
