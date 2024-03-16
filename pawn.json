@@ -1,0 +1,11 @@
+{
+	"user": "Robson04",
+	"repo": "dialog_pages",
+	"tag": "0.0.1",
+	"entry": "test.pwn",
+	"output": "test.amx",
+	"dependencies": [
+		"pawn-lang/samp-stdlib",
+		"pawn-lang/YSI-Includes"
+	]
+}
